@@ -1,0 +1,6 @@
+task :default => [:run]
+
+desc "Run the factors.rb script"
+task :run do
+  ruby "src/factors.rb" 
+end

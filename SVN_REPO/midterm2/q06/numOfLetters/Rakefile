@@ -1,0 +1,6 @@
+task :default => [:run]
+
+desc "Run the numOfLetters.rb script"
+task :run do
+  ruby "src/numOfLetters.rb" 
+end

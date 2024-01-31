@@ -1,0 +1,35 @@
+//build.gradle
+plugins {
+    id 'groovy'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.18'
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    testImplementation 'org.spockframework:spock-core:2.2-groovy-3.0'
+    testImplementation 'junit:junit:4.13.2'
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(20)
+    }
+}
+
+application {
+    mainClass = 'guessFile.guessingGameTest'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+
+

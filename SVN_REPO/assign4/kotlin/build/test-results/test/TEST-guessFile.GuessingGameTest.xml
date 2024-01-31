@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="guessFile.GuessingGameTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-12-01T00:39:20" hostname="lisas-MacBook-Pro.local" time="0.147">
+  <properties/>
+  <testcase name="testPlayGame()" classname="guessFile.GuessingGameTest" time="0.084"/>
+  <testcase name="testPlayGuessingGameEqual()" classname="guessFile.GuessingGameTest" time="0.007"/>
+  <testcase name="testPlayGuessingGameHigh()" classname="guessFile.GuessingGameTest" time="0.003"/>
+  <testcase name="testPlayGameTwoAttemptsLow()" classname="guessFile.GuessingGameTest" time="0.018"/>
+  <testcase name="testPlayGameTwoAttemptsHigh()" classname="guessFile.GuessingGameTest" time="0.004"/>
+  <testcase name="testPlayGuessingGameLow()" classname="guessFile.GuessingGameTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

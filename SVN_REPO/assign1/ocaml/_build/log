@@ -1,0 +1,130 @@
+# dune test
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/lisa/dessie_zuniga/assign1/ocaml
+# Auto-detected concurrency: 8
+$ /Users/lisa/.opam/default/bin/ocamlc.opt -config > /var/folders/h0/gwzsy8wx4z3fjkv5l5g5n3tw0000gn/T/dune_484595_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/Users/lisa/.opam/default/bin"
+#  ; ocaml = Ok External "/Users/lisa/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/Users/lisa/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/lisa/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/lisa/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/lisa/.opam/default/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/Users/lisa/.opam/default/lib/ocaml:/Users/lisa/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/lisa/.opam/default/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/lisa/dessie_zuniga/assign1/ocaml"
+#        ; "INSIDE_DUNE" :
+#            "/Users/lisa/dessie_zuniga/assign1/ocaml/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/lisa/dessie_zuniga/assign1/ocaml/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/lisa/dessie_zuniga/assign1/ocaml/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/lisa/dessie_zuniga/assign1/ocaml/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/Users/lisa/.opam/default/lib/ocaml"
+#      ; External "/Users/lisa/.opam/default/lib"
+#      ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/Users/lisa/.opam/default/lib/ocaml"
+#      ; standard_library = "/Users/lisa/.opam/default/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "cc"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin21.4.0"
+#      ; target = "x86_64-apple-darwin21.4.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.perfectNumber_test.objs/byte -no-alias-deps -opaque -o lib/.perfectNumber_test.objs/byte/perfectNumber_test__.cmo -c -impl lib/perfectNumber_test__.ml-gen)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.perfectNumber_test.objs/byte -I lib/.perfectNumber_test.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.perfectNumber_test.objs/native/perfectNumber_test__.cmx -c -impl lib/perfectNumber_test__.ml-gen)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlc.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /Users/lisa/.opam/default/lib/base -I /Users/lisa/.opam/default/lib/base/base_internalhash_types -I /Users/lisa/.opam/default/lib/base/caml -I /Users/lisa/.opam/default/lib/base/shadow_stdlib -I /Users/lisa/.opam/default/lib/ocaml-compiler-libs/common -I /Users/lisa/.opam/default/lib/ocaml-compiler-libs/shadow -I /Users/lisa/.opam/default/lib/ocaml/compiler-libs -I /Users/lisa/.opam/default/lib/ppx_derivers -I /Users/lisa/.opam/default/lib/ppx_inline_test -I /Users/lisa/.opam/default/lib/ppx_inline_test/libname -I /Users/lisa/.opam/default/lib/ppxlib -I /Users/lisa/.opam/default/lib/ppxlib/ast -I /Users/lisa/.opam/default/lib/ppxlib/astlib -I /Users/lisa/.opam/default/lib/ppxlib/print_diff -I /Users/lisa/.opam/default/lib/ppxlib/stdppx -I /Users/lisa/.opam/default/lib/ppxlib/traverse_builtins -I /Users/lisa/.opam/default/lib/sexplib0 -I /Users/lisa/.opam/default/lib/stdlib-shims -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmo -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlopt.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /Users/lisa/.opam/default/lib/base -I /Users/lisa/.opam/default/lib/base/base_internalhash_types -I /Users/lisa/.opam/default/lib/base/caml -I /Users/lisa/.opam/default/lib/base/shadow_stdlib -I /Users/lisa/.opam/default/lib/ocaml-compiler-libs/common -I /Users/lisa/.opam/default/lib/ocaml-compiler-libs/shadow -I /Users/lisa/.opam/default/lib/ocaml/compiler-libs -I /Users/lisa/.opam/default/lib/ppx_derivers -I /Users/lisa/.opam/default/lib/ppx_inline_test -I /Users/lisa/.opam/default/lib/ppx_inline_test/libname -I /Users/lisa/.opam/default/lib/ppxlib -I /Users/lisa/.opam/default/lib/ppxlib/ast -I /Users/lisa/.opam/default/lib/ppxlib/astlib -I /Users/lisa/.opam/default/lib/ppxlib/print_diff -I /Users/lisa/.opam/default/lib/ppxlib/stdppx -I /Users/lisa/.opam/default/lib/ppxlib/traverse_builtins -I /Users/lisa/.opam/default/lib/sexplib0 -I /Users/lisa/.opam/default/lib/stdlib-shims -intf-suffix .ml-gen -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlopt.opt -g -w -24 -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe /Users/lisa/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/lisa/.opam/default/lib/base/base_internalhash_types /Users/lisa/.opam/default/lib/base/caml/caml.cmxa /Users/lisa/.opam/default/lib/sexplib0/sexplib0.cmxa /Users/lisa/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/lisa/.opam/default/lib/base/base.cmxa -I /Users/lisa/.opam/default/lib/base /Users/lisa/.opam/default/lib/ocaml/compiler-libs/ocamlcommon.cmxa /Users/lisa/.opam/default/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /Users/lisa/.opam/default/lib/ppxlib/astlib/astlib.cmxa /Users/lisa/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /Users/lisa/.opam/default/lib/ppxlib/ast/ppxlib_ast.cmxa /Users/lisa/.opam/default/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /Users/lisa/.opam/default/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /Users/lisa/.opam/default/lib/ppx_derivers/ppx_derivers.cmxa /Users/lisa/.opam/default/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /Users/lisa/.opam/default/lib/ppxlib/stdppx/stdppx.cmxa /Users/lisa/.opam/default/lib/ppxlib/ppxlib.cmxa /Users/lisa/.opam/default/lib/ppx_inline_test/libname/ppx_inline_test_libname.cmxa /Users/lisa/.opam/default/lib/ppx_inline_test/ppx_inline_test.cmxa .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx)
+$ (cd _build/.sandbox/d954d5fcc3a5f45590a5dca3ebca115b/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="perfectNumber_test"' -o lib/perfectNumber.pp.ml --impl lib/perfectNumber.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/6d4c3ba4f2d57e3584b4e9323d539446/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="perfectNumber_test"' -o lib/perfectNumber_test.pp.ml --impl lib/perfectNumber_test.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamldep.opt -modules -impl lib/perfectNumber_test.pp.ml) > _build/default/lib/.perfectNumber_test.objs/perfectNumber_test.impl.d
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamldep.opt -modules -impl lib/perfectNumber.pp.ml) > _build/default/lib/.perfectNumber_test.objs/perfectNumber_test__PerfectNumber.impl.d
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.perfectNumber_test.objs/byte -I /Users/lisa/.opam/default/lib/base -I /Users/lisa/.opam/default/lib/base/base_internalhash_types -I /Users/lisa/.opam/default/lib/base/caml -I /Users/lisa/.opam/default/lib/base/shadow_stdlib -I /Users/lisa/.opam/default/lib/jane-street-headers -I /Users/lisa/.opam/default/lib/ppx_compare/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_enumerate/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_hash/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_inline_test/config -I /Users/lisa/.opam/default/lib/ppx_inline_test/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /Users/lisa/.opam/default/lib/sexplib0 -I /Users/lisa/.opam/default/lib/time_now -no-alias-deps -opaque -open PerfectNumber_test__ -o lib/.perfectNumber_test.objs/byte/perfectNumber_test.cmo -c -impl lib/perfectNumber_test.pp.ml)
+> File "lib/perfectNumber_test.ml", line 3, characters 29-39:
+> 3 | let%test "Add two numbers" = Sample.add 1 2 == 3
+>                                  ^^^^^^^^^^
+> Error: Unbound module Sample
+[2]
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.perfectNumber_test.objs/byte -I /Users/lisa/.opam/default/lib/base -I /Users/lisa/.opam/default/lib/base/base_internalhash_types -I /Users/lisa/.opam/default/lib/base/caml -I /Users/lisa/.opam/default/lib/base/shadow_stdlib -I /Users/lisa/.opam/default/lib/jane-street-headers -I /Users/lisa/.opam/default/lib/ppx_compare/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_enumerate/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_hash/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_inline_test/config -I /Users/lisa/.opam/default/lib/ppx_inline_test/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /Users/lisa/.opam/default/lib/sexplib0 -I /Users/lisa/.opam/default/lib/time_now -no-alias-deps -opaque -open PerfectNumber_test__ -o lib/.perfectNumber_test.objs/byte/perfectNumber_test__PerfectNumber.cmo -c -impl lib/perfectNumber.pp.ml)
+$ (cd _build/default && /Users/lisa/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.perfectNumber_test.objs/byte -I lib/.perfectNumber_test.objs/native -I /Users/lisa/.opam/default/lib/base -I /Users/lisa/.opam/default/lib/base/base_internalhash_types -I /Users/lisa/.opam/default/lib/base/caml -I /Users/lisa/.opam/default/lib/base/shadow_stdlib -I /Users/lisa/.opam/default/lib/jane-street-headers -I /Users/lisa/.opam/default/lib/ppx_compare/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_enumerate/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_hash/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_inline_test/config -I /Users/lisa/.opam/default/lib/ppx_inline_test/runtime-lib -I /Users/lisa/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /Users/lisa/.opam/default/lib/sexplib0 -I /Users/lisa/.opam/default/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open PerfectNumber_test__ -o lib/.perfectNumber_test.objs/native/perfectNumber_test__PerfectNumber.cmx -c -impl lib/perfectNumber.pp.ml)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="meetingdsl.SampleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-11-11T05:24:40" hostname="lisas-MacBook-Pro.local" time="0.187">
+  <properties/>
+  <testcase name="testShouldScheduleNamedMeetingWithStartTimeAndEndTime()" classname="meetingdsl.SampleTest" time="0.108"/>
+  <testcase name="testShouldScheduleNamedMeetingWithStartTime()" classname="meetingdsl.SampleTest" time="0.007"/>
+  <testcase name="testShouldScheduleNamedMeetingWithStartTimeAndEndTimeAndDate()" classname="meetingdsl.SampleTest" time="0.017"/>
+  <testcase name="testShouldScheduleNamedMeetingWithStartTimeAndEndTimeAndDateAndParticipants()" classname="meetingdsl.SampleTest" time="0.024"/>
+  <testcase name="testShouldScheduleNamedMeeting()" classname="meetingdsl.SampleTest" time="0.003"/>
+  <testcase name="testShouldScheduleMeeting()" classname="meetingdsl.SampleTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
